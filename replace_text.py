@@ -8,8 +8,6 @@ replace_char = str(input('Replacement Characters: '))
 # Creates the output text using the replace function
 output_text = input_text.replace(remove_char, replace_char)
 
-# Outputs the new text string directly to the clipboard
+# Copies new text to clipboard and outputs to console
 pyperclip.copy(output_text)
-
-# Outputs the text string to console
 print(f'New text: {output_text}')
